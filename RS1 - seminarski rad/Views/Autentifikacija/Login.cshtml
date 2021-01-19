@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-@{ var poruka = TempData["Poruka"]; }
+@{ var poruka = TempData["Message"]; }
 
 @{
     Layout = null;
@@ -48,8 +48,8 @@
     .login-box {
         width: 100%;
         margin: auto;
-        max-width: 525px;
-        min-height: 670px;
+        max-width: 100%;
+        min-height: 100%;
         position: relative;
         background-color: white;
         box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19)
@@ -252,21 +252,6 @@
 <body>
 
     <form asp-controller="Autentifikacija" asp-action="Snimi">
-
-        @*<div class="container w-50">
-                <h1 class="text-center">Prijava</h1>
-                <div>
-                    <input type="text" class="form-control" placeholder="Korisnicko ime" aria-label="KorisnickoIme" aria-describedby="basic-addon1" asp-for="KorisnickoIme">
-                </div>
-
-                <div>
-                    <input type="password" class="form-control" placeholder="Korisnicko ime" aria-label="KorisnickoIme" aria-describedby="basic-addon1" asp-for="Lozinka">
-                </div>
-
-                <button class="btn btn-primary" type="submit">Prijava</button>
-
-                <div id="Error">@poruka</div>
-            </div>*@
 
         <div class="row">
             <div class="col-md-6 mx-auto p-0">
